@@ -1,0 +1,84 @@
+package in.com.rays.proj4.bean;
+
+import java.util.Date;
+
+// Student JavaBean encapsulates Student attributes
+
+/**
+ * @author Rinku
+ *
+ */
+public class StudentBean extends BaseBean {
+
+	private String firstName;
+	private String lastName;
+	private Date dob;
+	private String mobileNo;
+	private String email;
+	private Long collegeId;
+	private String collegeName;
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public Date getDob() {
+		return dob;
+	}
+
+	public void setDob(Date dob) {
+		this.dob = dob;
+	}
+
+	public String getMobileNo() {
+		return mobileNo;
+	}
+
+	public void setMobileNo(String mobileNo) {
+		this.mobileNo = mobileNo;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Long getCollegeId() {
+		return collegeId;
+	}
+
+	public void setCollegeId(Long collegeId) {
+		this.collegeId = collegeId;
+	}
+
+	public String getCollegeName() {
+		return collegeName;
+	}
+
+	public void setCollegeName(String collegeName) {
+		this.collegeName = collegeName;
+	}
+
+	public String getKey() {
+		return id + "";
+	}
+
+	public String getValue() {
+		return firstName + " " + lastName;
+	}
+}
